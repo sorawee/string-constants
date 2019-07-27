@@ -27,7 +27,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (drracket "DrRacket")
  (ok "ตกลง")
  (cancel "ยกเลิก")
- (abort "Abort")
+ (abort "ยกเลิก")
  (untitled "Untitled")
  (untitled-n "Untitled ~a")
  (warning "Warning")
@@ -280,13 +280,13 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (scheme-mode-color-comment "คอมเมนต์")
  (scheme-mode-color-string "สายอักขระ")
  (scheme-mode-color-text "Text")
- (scheme-mode-color-constant "Constant")
+ (scheme-mode-color-constant "ค่าคงที่")
  (scheme-mode-color-parenthesis "วงเล็บ")
  (scheme-mode-color-hash-colon-keyword "#:Keyword")
  (scheme-mode-color-error "ข้อผิดพลาด")
  (scheme-mode-color-other "อื่น ๆ")
  ;; the ~a is filled in with one of the above (scheme-mode-*)
- (syntax-coloring-choose-color "Choose a color for ~a")
+ (syntax-coloring-choose-color "เลือกสีสำหรับ~a")
  (preferences-colors "สี") ;; used in the preferences dialog
 
   ;; parenthesis color scheme string constants
@@ -395,16 +395,16 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (download "ดาวน์โหลด") ;; button label
  (save-downloaded-file/size "บันทึกไฟล์ที่ดาวน์โหลดลงมา (~a ไบต์) ในชื่อ") ;; label for get-file dialog
  (save-downloaded-file "บันทึกไฟล์ที่ดาวน์โหลดลงมาในชื่อ")  ;; label for get-file dialog
- (downloading "Downloading") ;; dialog title
- (downloading-file... "Downloading file…")
+ (downloading "กำลังดาวน์โหลด") ;; dialog title
+ (downloading-file... "กำลังดาวน์โหลดไฟล์…")
  (package-was-installed "The package was installed.")
- (download-was-saved "The downloaded file was saved.")
+ (download-was-saved "บันทึกไฟล์ที่ดาวน์โหลดลงมาแล้ว")
 
- (install-plt-file-menu-item... "Install .plt File…")
- (install-plt-file-dialog-title "Install .plt File")
- (install-plt-web-tab "Web")
- (install-plt-file-tab "File")
- (install-plt-filename "Filename:")
+ (install-plt-file-menu-item... "ติดตั้งไฟล์ .plt…")
+ (install-plt-file-dialog-title "ติดตั้งไฟล์ .plt")
+ (install-plt-web-tab "เว็บ")
+ (install-plt-file-tab "ไฟล์")
+ (install-plt-filename "ชื่อไฟล์:")
  (install-plt-url "URL:")
  ; an error message from a primitive operation is appended to the end of this message.
  (install-plt-error-downloading "There was an error when downloading the"
@@ -417,8 +417,8 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (install-plt-file/no "แก้ไข")
 
  (plt-installer-progress-window-title "Installer Progress") ;; frame title
- (plt-installer-abort-installation "หยุดการติดตั้ง") ;; button label
- (plt-installer-aborted "Aborted.") ;; msg that appears in the installation window when installation is aborted
+ (plt-installer-abort-installation "ยกเลิกการติดตั้ง") ;; button label
+ (plt-installer-aborted "ยกเลิกการติดตั้งแล้ว") ;; msg that appears in the installation window when installation is aborted
 
  ;;; about box
  (about-drscheme-frame-title "เกี่ยวกับ DrRacket")
@@ -437,7 +437,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
   (save-image "บันทึกรูปภาพ…")
 
  ;;; preferences
- (preferences "Preferences")
+ (preferences "การตั้งค่า")
  (error-saving-preferences "Error saving preferences: ~a")
  (error-saving-preferences-title "Error saving preferences")
  (steal-the-lock-and-retry "Steal the lock && retry") ;; in the preferences error dialog; this happens when the lockfile exists (after 3 pref writes).
@@ -493,9 +493,9 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (show-interactions-on-execute "Automatically open interactions window when running a program")
  (switch-to-module-language-automatically "Automatically switch to the module language when opening a module")
  (interactions-beside-definitions "Put the interactions window beside the definitions window") ;; in preferences, below the checkbox one line above this one
- (show-line-numbers "Show line numbers")
- (show-line-numbers/menu "Show Line &Numbers")  ;; just like the above, but capitalized for appearance in a menu item
- (hide-line-numbers/menu "Hide Line &Numbers")
+ (show-line-numbers "แสดงเลขบรรทัด")
+ (show-line-numbers/menu "แสดงเลขบรรทัด (&N)")  ;; just like the above, but capitalized for appearance in a menu item
+ (hide-line-numbers/menu "ซ่อนเลขบรรทัด (&N)")
  (show-line-numbers-in-definitions "Show All Line Numbers in Definitions")
     ;; the constant above shows up in the popup menu item in the bottom of
     ;; the drracket window; controls the line numbers on each line in the definitions; used in a checkable menu item
@@ -538,10 +538,10 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (font-size-slider-label "Size")
  (restart-to-see-font-changes "Restart to see font changes")
 
- (font-prefs-panel-title "Font")
- (font-name "Font Name")
- (font-size "Font Size")
- (set-font "Set Font…")
+ (font-prefs-panel-title "ฟอนต์")
+ (font-name "ชื่อฟอนต์")
+ (font-size "ขนาดฟอนต์")
+ (set-font "กำหนดฟอนต์…")
  (font-smoothing-label  "Font smoothing")
  (font-smoothing-none "None")
  (font-smoothing-some "Some")
@@ -557,8 +557,8 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (only-warn-once "Only warn once when definitions and interactions are not synchronized")
 
  ; font size menu items in the 'view' menu; the ~a is filled with a number (font size)
- (increase-font-size "Increase Font Size (To ~a)")
- (decrease-font-size "Decrease Font Size (To ~a)")
+ (increase-font-size "เพิ่มขนาดฟอนต์ (ไปเป็น ~a)")
+ (decrease-font-size "ลดขนาดฟอนต์ (ไปเป็น ~a)")
 
  ; warning message when lockfile is around
  (waiting-for-pref-lock "Waiting for the preferences lockfile…")
@@ -582,8 +582,8 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
 
  (expected-a-symbol "expected a symbol, found: ~a")
  (already-used-keyword "“~a” is already a specially indented keyword")
- (add-keyword "Add")
- (remove-keyword "Remove")
+ (add-keyword "เพิ่ม")
+ (remove-keyword "ลบ")
 
   ; repl color preferences
   (repl-colors "REPL")
@@ -622,9 +622,9 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (mfs-regexp-filename-filter "Regexp filename filter")
  (mfs-search-string "Search string")
  (mfs-drscheme-multi-file-search "Multi File Search - DrRacket") ;; error message window title
- (mfs-not-a-dir "“~a” is not a directory")
- (mfs-open-file "Open File")
- (mfs-stop-search "Stop Search")
+ (mfs-not-a-dir "“~a” ไม่ใช่ไดเรกทอรี")
+ (mfs-open-file "เปิดไฟล์")
+ (mfs-stop-search "หยุดการค้นหา")
  (mfs-case-sensitive-label "Case sensitive")
  (mfs-no-matches-found "No matches found.")
  (mfs-search-interrupted "Search aborted.")
@@ -634,7 +634,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (are-you-sure-revert
   "Are you sure that you want to revert this file? This change cannot be undone.")
  (are-you-sure-revert-title
-  "Revert?")
+  "ย้อนกลับ?")
 
  ;;; saving a file
  ; ~a is filled with the filename
@@ -669,8 +669,8 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  ;;; versions below, once the &s have been stripped.
  ;;; if they don't, DrRacket's menus will appear
  ;;; in the wrong order.
- (file-menu "File")
- (edit-menu "Edit")
+ (file-menu "ไฟล์")
+ (edit-menu "แก้ไข")
  (help-menu "Help")
  (windows-menu "Windows")
  (tabs-menu "Tabs") ;; this is the name of the "Windows" menu under linux & windows
@@ -685,29 +685,29 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  ;;; more information is required from the user before completing
  ;;; the command.
 
- (file-menu-label "&File")
+ (file-menu-label "ไฟล์ (&F)")
 
- (new-info  "Open a new file")
+ (new-info  "เปิดไฟล์ใหม่")
  (new-menu-item "&New")
  (new-...-menu-item "&New…")
 
- (open-info "Open a file from disk")
- (open-menu-item "&Open…")
+ (open-info "เปิดไฟล์จากดิสก์")
+ (open-menu-item "เปิด… (&O)")
 
  (open-recent-info "A list of the recently opened files")
  (open-recent-menu-item "Open Recen&t")
 
  (revert-info "Revert this file to the copy on disk")
- (revert-menu-item "&Revert")
+ (revert-menu-item "ย้อนกลับ (&R)")
 
  (save-info "Save this file to disk")
- (save-menu-item "&Save")
+ (save-menu-item "บันทึก (&S)")
 
  (save-as-info "Prompt for a filename and save this file to disk")
  (save-as-menu-item "Save &As…")
 
  (print-info "Send this file to a printer")
- (print-menu-item "&Print…")
+ (print-menu-item "พิมพ์… (&P)")
 
  (page-setup-info "Configure printing parameters")
  (page-setup-menu-item "Page Setup…")

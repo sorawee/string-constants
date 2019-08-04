@@ -30,24 +30,24 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase [at] gmail [dot
  (abort "ยกเลิก")
  (untitled "Untitled")
  (untitled-n "Untitled ~a")
- (warning "Warning")
- (error "Error")
+ (warning "คำเตือน")
+ (error "ข้อผิดพลาด")
  (close "ปิด") ;; as in, close an open window or tab. must match close-menu-item
                  ;; in the sense that, when the &s have been stripped from
                  ;; close-menu-item, it must be the same string as this.
  (close-window "ปิดหน้าต่าง")
  (stop "หยุด")
- (&stop "&หยุด (&S)") ;; for use in button and menu item labels, with short cut.
- (are-you-sure-delete? "Are you sure you want to delete ~a?") ;; ~a is a filename or directory name
+ (&stop "หยุด (&S)") ;; for use in button and menu item labels, with short cut.
+ (are-you-sure-delete? "คุณแน่ใจที่จะลบ ~a หรือไม่?") ;; ~a is a filename or directory name
  (are-you-sure-replace? "Are you sure you want to replace ~a?") ;; ~a is a filename or directory name
- (ignore "Ignore")
+ (ignore "เพิกเฉย")
  (revert "ย้อนกลับ")
 
  ;; label for a generic check box, often supported on dialogs
  ;; that ask a binary choice of the user. If checked, the
  ;; dialog isn't going to be shown again.
  ;; One version for always using the current choice:
- (dont-ask-again-always-current "Do not ask again (always use current choice)")
+ (dont-ask-again-always-current "อย่าถามคำถามนี้อีก (ใช้ตัวเลือกปัจจุบันเสมอ)")
  ;; One generic version (ie, on the Quit DrRacket dialog)
  (dont-ask-again                "อย่าถามคำถามนี้อีก")
 
@@ -58,38 +58,38 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase [at] gmail [dot
  (pbd-homepage "Program by Design")
 
  ;;; bug report form
- (cancel-bug-report? "ยกเลิกการแจ้งปัญหา?")
+ (cancel-bug-report? "ยกเลิกรายงานปัญหา?")
  (are-you-sure-cancel-bug-report?
-  "Are you sure that you want to cancel sending this bug report?")
+  "คุณแน่ใจที่จะยกเลิกการส่งรายงานปัญหานี้หรือไม่?")
  (do-you-want-to-discard-or-save-this-bug-report
-  "Do you want to discard or save this bug report?")
+  "คุณต้องการที่จะทิ้งหรือบันทึกรายงานปัญหานี้")
  (discard "Discard") ;; a button label for a dialog box with the above question
- (bug-report-form "Bug Report Form")
+ (bug-report-form "แบบฟอร์มรายงานปัญหา")
  (bug-report-field-name "ชื่อของคุณ")
  (bug-report-field-email "อีเมล")
  (bug-report-field-summary "Summary")
- (bug-report-field-severity "Severity")
+ (bug-report-field-severity "ความรุนแรง")
  (bug-report-field-class "Class")
- (bug-report-field-description "Description")
+ (bug-report-field-description "รายละเอียด")
  (bug-report-field-reproduce1 "Steps to")
  (bug-report-field-reproduce2 "Reproduce")
- (bug-report-field-environment "Environment")
+ (bug-report-field-environment "สภาพแวดล้อม")
  (bug-report-field-docs-installed "Docs Installed")
  (bug-report-field-collections "Collections")
  (bug-report-field-links "Links")  ;; from 'raco link'
  (bug-report-field-human-language "Human Language")
  (bug-report-field-memory-use "Memory Use")
- (bug-report-field-version "Version")
+ (bug-report-field-version "รุ่น")
  (bug-report-synthesized-information "Synthesized Information")  ;; dialog title
  (bug-report-show-synthesized-info "Show Synthesized Info")
- (bug-report-submit "Submit")
- (close-and-save-bug-report "Close && Save") ;; button in bug report dialog, next to cancel and bug-report-submit
- (bug-report-submit-menu-item "Submit Bug Report…")  ;; same as above, but used when there are saved bug reports
+ (bug-report-submit "ส่ง")
+ (close-and-save-bug-report "ปิด && บันทึก") ;; button in bug report dialog, next to cancel and bug-report-submit
+ (bug-report-submit-menu-item "ส่งรายงานปัญหา…")  ;; same as above, but used when there are saved bug reports
  (saved-bug-reports-menu-item "Saved Bug Reports") ;; in Help Menu, submenu title
  (disacard-all-saved-bug-reports "Discard All Saved Bug Reports") ;; menu item: only shows up when there is more than one saved bug report
  (no-saved-bug-reports "No bug reports have been saved") ;; an info message that shows up as a disabled menu item when no saved bug reports are around
  (new-bug-report "New Bug Report") ;; button label the user sees when there are saved bug reports, but the user asks to save another one.
- (close-and-save "Close and Save") ;; button on the bottom of the bug report form
+ (close-and-save "ปิดและบันทึก") ;; button on the bottom of the bug report form
  (saved-unsubmitted-bug-reports "Saved, unsubmitted bug reports:")
   ;; the above string constant is next to previous line in same dialog, followed by list of bug report subjects (as buttons)
  (error-sending-bug-report "Error Sending Bug Report")
@@ -119,7 +119,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase [at] gmail [dot
  (cs-smoothing-partial "Partly smoothed")
  (cs-smoothing-full "Smoothed")
  (cs-smoothing-none "Unsmoothed")
- (cs-change-color "Change Color")
+ (cs-change-color "เปลี่ยนสี")
  (cs-foreground-color "Foreground Color")
  (cs-background-color "Background Color")
  (cs-tack/untack-arrow "Tack/Untack Arrow(s)")
@@ -129,7 +129,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase [at] gmail [dot
  (cs-jump-to-binding "Jump to Binding Occurrence")
  (cs-jump-to-definition "Jump to Definition (in Other File)")
  (cs-open-defining-file "Open Defining File")
- (cs-error-message "Error Message")
+ (cs-error-message "ข้อความแสดงข้อผิดพลาด")
  (cs-open-file "เปิด ~a")
  (cs-rename-var "เปลี่ยนชื่อ ~a")
  (cs-rename-id "เปลี่ยนชื่อตัวแปร")
@@ -150,7 +150,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase [at] gmail [dot
   ;; is put into the second ~a. Use check syntax and right-click on a documented variable (eg, 'require') to see this in use
 
  (cs-lexical-variable "lexical variable")
- (cs-set!d-variable "mutated variable")
+ (cs-set!d-variable "ตัวแปรที่ถูกเปลี่ยนค่า")
  (cs-imported-variable "imported variable")
  (cs-unused-require "unused require")
  (cs-free-variable "free variable")
@@ -173,13 +173,13 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase [at] gmail [dot
   (cs-the-binder-is-prefixed "The require appears to already have a prefix; try to rename it instead")
 
   ;; mode sub-menu in the "view" menu
-  (cs-check-syntax-mode "Check Syntax Mode")
+  (cs-check-syntax-mode "โหมดตรวจสอบวากยสัมพันธ์")
   (cs-mode-menu-show-my-obligations "My Contract Obligations")
   (cs-mode-menu-show-client-obligations "Client Contract Obligations")
   (cs-mode-menu-show-syntax "Syntactic Categories")
 
   ;; the documentation blue boxes in the upper-right corner of the drracket window
-  (sc-read-more... "read more…")
+  (sc-read-more... "อ่านเพิ่มเติม…")
   (sc-f2-to-un/lock "f2 to (un)lock")
 
  ;; the online check syntax status messages (mouse over the bottom right of drracket's window to see the messages during online expansion's various phases)
@@ -190,7 +190,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase [at] gmail [dot
  (online-expansion-finished-successfully "Background expansion finished successfully")
 
  (jump-to-error "กระโดดไปยังข้อผิดพลาด")
- (copy-error-message "คัดลอกข้อความผิดพลาด")
+ (copy-error-message "คัดลอกข้อความแสดงข้อผิดพลาด")
  (online-expansion-is-disabled "Background expansion is disabled")
  ; these next two show up in the bar along the bottom of the drracket window
  (online-expansion-pending "Background expansion pending…")
@@ -234,7 +234,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase [at] gmail [dot
  (goto-line "ไปที่บรรทัด")
  (goto-line-invalid-number
   "~a is not a valid line number. It must be an integer between 1 and ~a")
- (goto-position "Goto Position")
+ (goto-position "ไปที่ตำแหน่ง")
  (no-full-name-since-not-saved
   "The file does not have a full name because it has not yet been saved.")
  (cannot-open-because-dne "Cannot open ~a because it does not exist.")
@@ -250,9 +250,9 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase [at] gmail [dot
    "This editor has been changed since the source location was recorded, so the highlighted region may no longer correspond to the correct source location.")
 
  (file-is-not-saved "The file “~a” is not saved.")
- (save "Save")
+ (save "บันทึก")
  (close-anyway "Close Anyway")
- (dont-save "Don't Save")
+ (dont-save "อย่าบันทึก")
  (clear-anyway "Clear Anyway")
 
  ;; menu item title
@@ -308,7 +308,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase [at] gmail [dot
 
  ;; Help Desk
  (help "Help")
- (racket-documentation "คู่มือ Racket")
+ (racket-documentation "คู่มือการใช้งาน Racket")
  (help-desk "Help Desk")
  (plt:hd:search "ค้นหา")
  (plt:hd:feeling-lucky "Feeling Lucky")

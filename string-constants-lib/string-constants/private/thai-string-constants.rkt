@@ -2,7 +2,7 @@
 
 Thai translation of Racket string constants file, version: 1.01
 This file is distributed under the same terms as Racket
-Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 2019.
+Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase [at] gmail [dot] com>, 2019.
 
 |#
 
@@ -1095,14 +1095,14 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (expand-sexp "Expand S-expression")
 
  ;;; fraction dialog
- (enter-fraction "Enter Fraction")
+ (enter-fraction "ใส่เศษส่วน")
  (whole-part "Whole Part")
  (numerator "Numerator")
  (denominator "Denominator")
  (insert-number/bad-whole-part "The whole part of the number must be an integral number")
  (insert-number/bad-numerator "The numerator part of the number must be a non-negative, integral number")
  (insert-number/bad-denominator "The denominator part of the number must be a positive, integral number")
- (insert-fraction-menu-item-label "Insert Fraction…")
+ (insert-fraction-menu-item-label "แทรกเศษส่วน…")
 
  ;; number snip popup menu
  (show-decimal-expansion "View decimal expansion")
@@ -1131,7 +1131,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
   (teachpack-conflict
    "WARNING: the already installed teachpack ~a conflicts with ~a (the export ~a is in both)")
    ;; a button label; the two ~a are filled with teachpack names
-  (remove-and-add-teachpack "Remove ~a and add ~a")
+  (remove-and-add-teachpack "นำ ~a ออกและเพิ่ม ~a")
   (teachpack-already-installed "A teachpack with the name '~a' has already been installed. Overwrite it?")
   ; ~a is filled with a list of language names. Each name is separated by a newline and is indented two spaces (no commas, no 'and')
   (teachpacks-only-in-languages "The Teachpack menu is only available in these languages: ~a\n\nIn other languages, use 'require' instead.")

@@ -2,7 +2,7 @@
 
 Thai translation of Racket string constants file, version: 1.01
 This file is distributed under the same terms as Racket
-Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 2019.
+Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase [at] gmail [dot] com>, 2019.
 
 |#
 
@@ -25,31 +25,31 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (plt "PLT")
  (drscheme "DrRacket")
  (drracket "DrRacket")
- (ok "OK")
- (cancel "Cancel")
- (abort "Abort")
+ (ok "ตกลง")
+ (cancel "ยกเลิก")
+ (abort "ยกเลิก")
  (untitled "Untitled")
  (untitled-n "Untitled ~a")
- (warning "Warning")
- (error "Error")
- (close "Close") ;; as in, close an open window or tab. must match close-menu-item
+ (warning "คำเตือน")
+ (error "ข้อผิดพลาด")
+ (close "ปิด") ;; as in, close an open window or tab. must match close-menu-item
                  ;; in the sense that, when the &s have been stripped from
                  ;; close-menu-item, it must be the same string as this.
- (close-window "Close Window")
- (stop "Stop")
- (&stop "&Stop") ;; for use in button and menu item labels, with short cut.
- (are-you-sure-delete? "Are you sure you want to delete ~a?") ;; ~a is a filename or directory name
+ (close-window "ปิดหน้าต่าง")
+ (stop "หยุด")
+ (&stop "หยุด (&S)") ;; for use in button and menu item labels, with short cut.
+ (are-you-sure-delete? "คุณแน่ใจที่จะลบ ~a หรือไม่?") ;; ~a is a filename or directory name
  (are-you-sure-replace? "Are you sure you want to replace ~a?") ;; ~a is a filename or directory name
- (ignore "Ignore")
- (revert "Revert")
+ (ignore "เพิกเฉย")
+ (revert "ย้อนกลับ")
 
  ;; label for a generic check box, often supported on dialogs
  ;; that ask a binary choice of the user. If checked, the
  ;; dialog isn't going to be shown again.
  ;; One version for always using the current choice:
- (dont-ask-again-always-current "Do not ask again (always use current choice)")
+ (dont-ask-again-always-current "อย่าถามคำถามนี้อีก (ใช้ตัวเลือกปัจจุบันเสมอ)")
  ;; One generic version (ie, on the Quit DrRacket dialog)
- (dont-ask-again                "Do not ask again")
+ (dont-ask-again                "อย่าถามคำถามนี้อีก")
 
  ;;; important urls
  (web-materials "Related Web Sites") ;; menu item title
@@ -58,38 +58,38 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (pbd-homepage "Program by Design")
 
  ;;; bug report form
- (cancel-bug-report? "Cancel Bug Report?")
+ (cancel-bug-report? "ยกเลิกรายงานปัญหา?")
  (are-you-sure-cancel-bug-report?
-  "Are you sure that you want to cancel sending this bug report?")
+  "คุณแน่ใจที่จะยกเลิกการส่งรายงานปัญหานี้หรือไม่?")
  (do-you-want-to-discard-or-save-this-bug-report
-  "Do you want to discard or save this bug report?")
+  "คุณต้องการที่จะทิ้งหรือบันทึกรายงานปัญหานี้")
  (discard "Discard") ;; a button label for a dialog box with the above question
- (bug-report-form "Bug Report Form")
- (bug-report-field-name "Your Name")
- (bug-report-field-email "Email")
+ (bug-report-form "แบบฟอร์มรายงานปัญหา")
+ (bug-report-field-name "ชื่อของคุณ")
+ (bug-report-field-email "อีเมล")
  (bug-report-field-summary "Summary")
- (bug-report-field-severity "Severity")
+ (bug-report-field-severity "ความรุนแรง")
  (bug-report-field-class "Class")
- (bug-report-field-description "Description")
+ (bug-report-field-description "รายละเอียด")
  (bug-report-field-reproduce1 "Steps to")
  (bug-report-field-reproduce2 "Reproduce")
- (bug-report-field-environment "Environment")
+ (bug-report-field-environment "สภาพแวดล้อม")
  (bug-report-field-docs-installed "Docs Installed")
  (bug-report-field-collections "Collections")
  (bug-report-field-links "Links")  ;; from 'raco link'
  (bug-report-field-human-language "Human Language")
  (bug-report-field-memory-use "Memory Use")
- (bug-report-field-version "Version")
+ (bug-report-field-version "รุ่น")
  (bug-report-synthesized-information "Synthesized Information")  ;; dialog title
  (bug-report-show-synthesized-info "Show Synthesized Info")
- (bug-report-submit "Submit")
- (close-and-save-bug-report "Close && Save") ;; button in bug report dialog, next to cancel and bug-report-submit
- (bug-report-submit-menu-item "Submit Bug Report…")  ;; same as above, but used when there are saved bug reports
+ (bug-report-submit "ส่ง")
+ (close-and-save-bug-report "ปิด && บันทึก") ;; button in bug report dialog, next to cancel and bug-report-submit
+ (bug-report-submit-menu-item "ส่งรายงานปัญหา…")  ;; same as above, but used when there are saved bug reports
  (saved-bug-reports-menu-item "Saved Bug Reports") ;; in Help Menu, submenu title
  (disacard-all-saved-bug-reports "Discard All Saved Bug Reports") ;; menu item: only shows up when there is more than one saved bug report
  (no-saved-bug-reports "No bug reports have been saved") ;; an info message that shows up as a disabled menu item when no saved bug reports are around
  (new-bug-report "New Bug Report") ;; button label the user sees when there are saved bug reports, but the user asks to save another one.
- (close-and-save "Close and Save") ;; button on the bottom of the bug report form
+ (close-and-save "ปิดและบันทึก") ;; button on the bottom of the bug report form
  (saved-unsubmitted-bug-reports "Saved, unsubmitted bug reports:")
   ;; the above string constant is next to previous line in same dialog, followed by list of bug report subjects (as buttons)
  (error-sending-bug-report "Error Sending Bug Report")
@@ -111,7 +111,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
   (visit-mailing-list "Visit Mailing Lists")
 
  ;;; check syntax
- (check-syntax "Check Syntax")
+ (check-syntax "ตรวจสอบวากยสัมพันธ์")
  (cs-italic "Italic")
  (cs-bold "Bold")
  (cs-underline "Underline")
@@ -119,7 +119,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (cs-smoothing-partial "Partly smoothed")
  (cs-smoothing-full "Smoothed")
  (cs-smoothing-none "Unsmoothed")
- (cs-change-color "Change Color")
+ (cs-change-color "เปลี่ยนสี")
  (cs-foreground-color "Foreground Color")
  (cs-background-color "Background Color")
  (cs-tack/untack-arrow "Tack/Untack Arrow(s)")
@@ -129,11 +129,11 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (cs-jump-to-binding "Jump to Binding Occurrence")
  (cs-jump-to-definition "Jump to Definition (in Other File)")
  (cs-open-defining-file "Open Defining File")
- (cs-error-message "Error Message")
- (cs-open-file "Open ~a")
- (cs-rename-var "Rename ~a")
- (cs-rename-id "Rename Identifier")
- (cs-rename-var-to "Rename “~a” to:")
+ (cs-error-message "ข้อความแสดงข้อผิดพลาด")
+ (cs-open-file "เปิด ~a")
+ (cs-rename-var "เปลี่ยนชื่อ ~a")
+ (cs-rename-id "เปลี่ยนชื่อตัวแปร")
+ (cs-rename-var-to "เปลี่ยนชื่อ “~a” ไปเป็น:")
  (cs-name-duplication-error "The new name you have chosen, ~s, conflicts with an already established name in this scope.")
  (cs-rename-anyway "Rename Anyway")
  (cs-status-init "Check Syntax: Initializing environment for user code")
@@ -144,13 +144,13 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (cs-syncheck-running "Check Syntax Running")
  (cs-mouse-over-import "binding “~s” imported from “~s”")
  (cs-mouse-over-import/library-only "imported from “~s”")
- (cs-view-docs "View documentation for “~a”")
- (cs-view-docs-from "~a from ~a")  ;; a completed version of the line above
+ (cs-view-docs "ดูคู่มือการใช้งานสำหรับ “~a”")
+ (cs-view-docs-from "~a จาก ~a")  ;; a completed version of the line above
   ;; (cs-view-docs) is put into the first ~a and a list of modules (separated by commas)
   ;; is put into the second ~a. Use check syntax and right-click on a documented variable (eg, 'require') to see this in use
 
  (cs-lexical-variable "lexical variable")
- (cs-set!d-variable "mutated variable")
+ (cs-set!d-variable "ตัวแปรที่ถูกเปลี่ยนค่า")
  (cs-imported-variable "imported variable")
  (cs-unused-require "unused require")
  (cs-free-variable "free variable")
@@ -173,13 +173,13 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
   (cs-the-binder-is-prefixed "The require appears to already have a prefix; try to rename it instead")
 
   ;; mode sub-menu in the "view" menu
-  (cs-check-syntax-mode "Check Syntax Mode")
+  (cs-check-syntax-mode "โหมดตรวจสอบวากยสัมพันธ์")
   (cs-mode-menu-show-my-obligations "My Contract Obligations")
   (cs-mode-menu-show-client-obligations "Client Contract Obligations")
   (cs-mode-menu-show-syntax "Syntactic Categories")
 
   ;; the documentation blue boxes in the upper-right corner of the drracket window
-  (sc-read-more... "read more…")
+  (sc-read-more... "อ่านเพิ่มเติม…")
   (sc-f2-to-un/lock "f2 to (un)lock")
 
  ;; the online check syntax status messages (mouse over the bottom right of drracket's window to see the messages during online expansion's various phases)
@@ -189,8 +189,8 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (online-expansion-abnormal-termination-out-of-memory "Background expansion terminated abnormally (out of memory)")
  (online-expansion-finished-successfully "Background expansion finished successfully")
 
- (jump-to-error "Jump to Error")
- (copy-error-message "Copy Error Message")
+ (jump-to-error "กระโดดไปยังข้อผิดพลาด")
+ (copy-error-message "คัดลอกข้อความแสดงข้อผิดพลาด")
  (online-expansion-is-disabled "Background expansion is disabled")
  ; these next two show up in the bar along the bottom of the drracket window
  (online-expansion-pending "Background expansion pending…")
@@ -212,29 +212,29 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (show-blueboxes "Show blue boxes and blue box arrow semi-circle")
  ;;; info bar at botttom of drscheme frame
  (collect-button-label "GC")
-  (read-only "Read only")
+  (read-only "อ่านเท่านั้น")
  (auto-extend-selection "Auto-extend")
  (overwrite "Overwrite")
- (running "running")
+ (running "กำลังรัน")
  (not-running "not running")
 
-  (install-package-button "Install ~a") ;; button label: ~a is filled with the name of a pkg
+  (install-package-button "ติดตั้ง ~a") ;; button label: ~a is filled with the name of a pkg
   (update-catalog "Update Catalog") ;; button label; shown when there is a missing module, but no matching package
   (updating-catalog-from "Updating from ~a…") ;; message label; used as a status message when updating the pkg catalog
 
  ;;; misc
- (welcome-to-something "Welcome to ~a")
+ (welcome-to-something "ยินดีต้อนรับสู่ ~a")
 
  ; this appears in the drscheme about box.
- (welcome-to-drscheme-version/language "Welcome to DrRacket, version ~a, ~a")
+ (welcome-to-drscheme-version/language "ยินดีต้อนรับสู่ DrRacket รุ่น ~a, ~a")
 
  ; these appear on subsequent lines in the `Help|Welcome to DrRacket' dialog.
- (welcome-to-drscheme "Welcome to DrRacket")
+ (welcome-to-drscheme "ยินดีต้อนรับสู่ DrRacket")
 
- (goto-line "Goto line")
+ (goto-line "ไปที่บรรทัด")
  (goto-line-invalid-number
   "~a is not a valid line number. It must be an integer between 1 and ~a")
- (goto-position "Goto Position")
+ (goto-position "ไปที่ตำแหน่ง")
  (no-full-name-since-not-saved
   "The file does not have a full name because it has not yet been saved.")
  (cannot-open-because-dne "Cannot open ~a because it does not exist.")
@@ -250,9 +250,9 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
    "This editor has been changed since the source location was recorded, so the highlighted region may no longer correspond to the correct source location.")
 
  (file-is-not-saved "The file “~a” is not saved.")
- (save "Save")
+ (save "บันทึก")
  (close-anyway "Close Anyway")
- (dont-save "Don't Save")
+ (dont-save "อย่าบันทึก")
  (clear-anyway "Clear Anyway")
 
  ;; menu item title
@@ -271,23 +271,23 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
 
  ;; modes
  (mode-submenu-label "Modes")
- (scheme-mode "Scheme mode")
- (racket-mode "Racket mode")
- (text-mode "Text mode")
+ (scheme-mode "โหมด Scheme")
+ (racket-mode "โหมด Racket")
+ (text-mode "โหมดตัวหนังสือ")
 
  (scheme-mode-color-symbol "Symbol")
  (scheme-mode-color-keyword "Keyword")
- (scheme-mode-color-comment "Comment")
- (scheme-mode-color-string "String")
+ (scheme-mode-color-comment "คอมเมนต์")
+ (scheme-mode-color-string "สายอักขระ")
  (scheme-mode-color-text "Text")
- (scheme-mode-color-constant "Constant")
- (scheme-mode-color-parenthesis "Parenthesis")
+ (scheme-mode-color-constant "ค่าคงที่")
+ (scheme-mode-color-parenthesis "วงเล็บ")
  (scheme-mode-color-hash-colon-keyword "#:Keyword")
- (scheme-mode-color-error "Error")
- (scheme-mode-color-other "Other")
+ (scheme-mode-color-error "ข้อผิดพลาด")
+ (scheme-mode-color-other "อื่น ๆ")
  ;; the ~a is filled in with one of the above (scheme-mode-*)
- (syntax-coloring-choose-color "Choose a color for ~a")
- (preferences-colors "Colors") ;; used in the preferences dialog
+ (syntax-coloring-choose-color "เลือกสีสำหรับ~a")
+ (preferences-colors "สี") ;; used in the preferences dialog
 
   ;; parenthesis color scheme string constants
   (parenthesis-color-scheme "Parenthesis color scheme") ;; label for the choice% menu in the preferences dialog
@@ -300,17 +300,17 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
 
 
  (url: "URL:")
- (open-url... "Open URL…")
- (open-url "Open URL")
+ (open-url... "เปิด URL…")
+ (open-url "เปิด URL")
  (browse... "Browse…")
  (bad-url "Bad URL")
  (bad-url:this "Bad URL: ~a")
 
  ;; Help Desk
  (help "Help")
- (racket-documentation "Racket Documentation")
+ (racket-documentation "คู่มือการใช้งาน Racket")
  (help-desk "Help Desk")
- (plt:hd:search "Search")
+ (plt:hd:search "ค้นหา")
  (plt:hd:feeling-lucky "Feeling Lucky")
  (plt:hd:home "Help Desk home")
  ; next 3 are popup menu choices in help desk search frame
@@ -323,7 +323,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (plt:hd:find-docs-for "Find docs for:")
  (plt:hd:search-stopped-too-many-matches "[Search aborted: too many matches]")
  (plt:hd:nothing-found-for "Nothing found for ~a")
- (plt:hd:and "and")
+ (plt:hd:and "และ")
  (plt:hd:refresh "refresh")
  (plt:hd:refresh-all-manuals "refresh all manuals")
  (plt:hd:manual-installed-date "(installed ~a)")
@@ -379,32 +379,32 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  ;; browser
  (rewind-in-browser-history "Rewind")
  (forward-in-browser-history "Forward")
- (home "Home")
+ (home "หน้าหลัก")
  (browser "Browser")
  (external-browser-choice-title "External Browser") ; title for radio-button set
  (browser-command-line-label "Command Line:") ; label for radio button that is followed by text boxes
  (choose-browser "Choose a Browser")
- (no-browser "Ask Later")
+ (no-browser "ถามทีหลัง")
  (browser-cmdline-expl-line-1 "(Command line formed by concatenating pre-text, URL,") ; explanatory text for dialog, line 1
  (browser-cmdline-expl-line-2 "and post-text, with no extra spaces between them.)") ; ... line 2. (Anyone need more lines?)
- (install? "Install?")  ;; if a .plt file is found (title of dialog)
+ (install? "ติดตั้ง?")  ;; if a .plt file is found (title of dialog)
  (you-have-selected-an-installable-package "You have selected an installable package.")
- (do-you-want-to-install-it? "Do you want to install it?")
+ (do-you-want-to-install-it? "คุณต้องการที่จะติดตั้งหรือไม่?")
  (paren-file-size "(The file is ~a bytes)")
- (download-and-install "Download && Install") ;; button label
- (download "Download") ;; button label
- (save-downloaded-file/size "Save downloaded file (~a bytes) as") ;; label for get-file dialog
- (save-downloaded-file "Save downloaded file as")  ;; label for get-file dialog
- (downloading "Downloading") ;; dialog title
- (downloading-file... "Downloading file…")
+ (download-and-install "ดาวน์โหลด && ติดตั้ง") ;; button label
+ (download "ดาวน์โหลด") ;; button label
+ (save-downloaded-file/size "บันทึกไฟล์ที่ดาวน์โหลดลงมา (~a ไบต์) เป็น") ;; label for get-file dialog
+ (save-downloaded-file "บันทึกไฟล์ที่ดาวน์โหลดลงมาเป็น")  ;; label for get-file dialog
+ (downloading "กำลังดาวน์โหลด") ;; dialog title
+ (downloading-file... "กำลังดาวน์โหลดไฟล์…")
  (package-was-installed "The package was installed.")
- (download-was-saved "The downloaded file was saved.")
+ (download-was-saved "บันทึกไฟล์ที่ดาวน์โหลดลงมาแล้ว")
 
- (install-plt-file-menu-item... "Install .plt File…")
- (install-plt-file-dialog-title "Install .plt File")
- (install-plt-web-tab "Web")
- (install-plt-file-tab "File")
- (install-plt-filename "Filename:")
+ (install-plt-file-menu-item... "ติดตั้งไฟล์ .plt…")
+ (install-plt-file-dialog-title "ติดตั้งไฟล์ .plt")
+ (install-plt-web-tab "เว็บ")
+ (install-plt-file-tab "ไฟล์")
+ (install-plt-filename "ชื่อไฟล์:")
  (install-plt-url "URL:")
  ; an error message from a primitive operation is appended to the end of this message.
  (install-plt-error-downloading "There was an error when downloading the"
@@ -413,15 +413,15 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
 
  ;; install plt file when opened in drscheme strings
  (install-plt-file "Install ~a or open for editing?")
- (install-plt-file/yes "Install")
- (install-plt-file/no "Edit")
+ (install-plt-file/yes "ติดตั้ง")
+ (install-plt-file/no "แก้ไข")
 
  (plt-installer-progress-window-title "Installer Progress") ;; frame title
- (plt-installer-abort-installation "Abort Installation") ;; button label
- (plt-installer-aborted "Aborted.") ;; msg that appears in the installation window when installation is aborted
+ (plt-installer-abort-installation "ยกเลิกการติดตั้ง") ;; button label
+ (plt-installer-aborted "ยกเลิกการติดตั้งแล้ว") ;; msg that appears in the installation window when installation is aborted
 
  ;;; about box
- (about-drscheme-frame-title "About DrRacket")
+ (about-drscheme-frame-title "เกี่ยวกับ DrRacket")
 
  ;;; save file in particular format prompting.
  (save-as-plain-text "Save this file as plain text?")
@@ -429,15 +429,15 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (save-in-drs-format "Save this file in DrRacket-specific non-text format?")
  (keep-format "Keep (may lose data)")
  (convert-format "Convert (recommended)")
- (dont-save "Don't Save")
- (yes "Yes")
- (no "No")
+ (dont-save "อย่าบันทึก")
+ (yes "ใช่")
+ (no "ไม่")
 
  ;; saving image (right click on an image to see the text)
-  (save-image "Save image…")
+  (save-image "บันทึกรูปภาพ…")
 
  ;;; preferences
- (preferences "Preferences")
+ (preferences "การตั้งค่า")
  (error-saving-preferences "Error saving preferences: ~a")
  (error-saving-preferences-title "Error saving preferences")
  (steal-the-lock-and-retry "Steal the lock && retry") ;; in the preferences error dialog; this happens when the lockfile exists (after 3 pref writes).
@@ -449,7 +449,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  ; difference between the above and below is one comes with a question (steal the lock or not) and the other with just a notation saying "the file is locked"
  (dont-notify-again-until-drracket-restarted "Don't notify again (until DrRacket is restarted)")
  (prefs-file-locked "The preferences file is locked (because the file ~a exists), so your preference change could not be saved. Cancel preference change?")
- (try-again "Try again") ;; button label
+ (try-again "ลองใหม่อีกครั้ง") ;; button label
  (give-up-and-use-the-default "Give up and use the default") ;; button label
 
  (prefs-file-still-locked "The preferences file is still locked (because the file ~a exists), so your preference change will not be saved.")
@@ -493,9 +493,9 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (show-interactions-on-execute "Automatically open interactions window when running a program")
  (switch-to-module-language-automatically "Automatically switch to the module language when opening a module")
  (interactions-beside-definitions "Put the interactions window beside the definitions window") ;; in preferences, below the checkbox one line above this one
- (show-line-numbers "Show line numbers")
- (show-line-numbers/menu "Show Line &Numbers")  ;; just like the above, but capitalized for appearance in a menu item
- (hide-line-numbers/menu "Hide Line &Numbers")
+ (show-line-numbers "แสดงเลขบรรทัด")
+ (show-line-numbers/menu "แสดงเลขบรรทัด (&N)")  ;; just like the above, but capitalized for appearance in a menu item
+ (hide-line-numbers/menu "ซ่อนเลขบรรทัด (&N)")
  (show-line-numbers-in-definitions "Show All Line Numbers in Definitions")
     ;; the constant above shows up in the popup menu item in the bottom of
     ;; the drracket window; controls the line numbers on each line in the definitions; used in a checkable menu item
@@ -538,10 +538,10 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (font-size-slider-label "Size")
  (restart-to-see-font-changes "Restart to see font changes")
 
- (font-prefs-panel-title "Font")
- (font-name "Font Name")
- (font-size "Font Size")
- (set-font "Set Font…")
+ (font-prefs-panel-title "ฟอนต์")
+ (font-name "ชื่อฟอนต์")
+ (font-size "ขนาดฟอนต์")
+ (set-font "กำหนดฟอนต์…")
  (font-smoothing-label  "Font smoothing")
  (font-smoothing-none "None")
  (font-smoothing-some "Some")
@@ -557,8 +557,8 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (only-warn-once "Only warn once when definitions and interactions are not synchronized")
 
  ; font size menu items in the 'view' menu; the ~a is filled with a number (font size)
- (increase-font-size "Increase Font Size (To ~a)")
- (decrease-font-size "Decrease Font Size (To ~a)")
+ (increase-font-size "เพิ่มขนาดฟอนต์ (ไปเป็น ~a)")
+ (decrease-font-size "ลดขนาดฟอนต์ (ไปเป็น ~a)")
 
  ; warning message when lockfile is around
  (waiting-for-pref-lock "Waiting for the preferences lockfile…")
@@ -582,8 +582,8 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
 
  (expected-a-symbol "expected a symbol, found: ~a")
  (already-used-keyword "“~a” is already a specially indented keyword")
- (add-keyword "Add")
- (remove-keyword "Remove")
+ (add-keyword "เพิ่ม")
+ (remove-keyword "ลบ")
 
   ; repl color preferences
   (repl-colors "REPL")
@@ -622,9 +622,9 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (mfs-regexp-filename-filter "Regexp filename filter")
  (mfs-search-string "Search string")
  (mfs-drscheme-multi-file-search "Multi File Search - DrRacket") ;; error message window title
- (mfs-not-a-dir "“~a” is not a directory")
- (mfs-open-file "Open File")
- (mfs-stop-search "Stop Search")
+ (mfs-not-a-dir "“~a” ไม่ใช่ไดเรกทอรี")
+ (mfs-open-file "เปิดไฟล์")
+ (mfs-stop-search "หยุดการค้นหา")
  (mfs-case-sensitive-label "Case sensitive")
  (mfs-no-matches-found "No matches found.")
  (mfs-search-interrupted "Search aborted.")
@@ -634,7 +634,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (are-you-sure-revert
   "Are you sure that you want to revert this file? This change cannot be undone.")
  (are-you-sure-revert-title
-  "Revert?")
+  "ย้อนกลับ?")
 
  ;;; saving a file
  ; ~a is filled with the filename
@@ -669,11 +669,11 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  ;;; versions below, once the &s have been stripped.
  ;;; if they don't, DrRacket's menus will appear
  ;;; in the wrong order.
- (file-menu "File")
- (edit-menu "Edit")
- (help-menu "Help")
- (windows-menu "Windows")
- (tabs-menu "Tabs") ;; this is the name of the "Windows" menu under linux & windows
+ (file-menu "ไฟล์")
+ (edit-menu "แก้ไข")
+ (help-menu "วิธีใช้")
+ (windows-menu "หน้าต่าง")
+ (tabs-menu "แท็บ") ;; this is the name of the "Windows" menu under linux & windows
 
  ;;; menus
  ;;; - in menu labels, the & indicates a alt-key based shortcut.
@@ -685,84 +685,84 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  ;;; more information is required from the user before completing
  ;;; the command.
 
- (file-menu-label "&File")
+ (file-menu-label "ไฟล์ (&F)")
 
- (new-info  "Open a new file")
+ (new-info  "เปิดไฟล์ใหม่")
  (new-menu-item "&New")
  (new-...-menu-item "&New…")
 
- (open-info "Open a file from disk")
- (open-menu-item "&Open…")
+ (open-info "เปิดไฟล์จากดิสก์")
+ (open-menu-item "เปิด… (&O)")
 
  (open-recent-info "A list of the recently opened files")
  (open-recent-menu-item "Open Recen&t")
 
  (revert-info "Revert this file to the copy on disk")
- (revert-menu-item "&Revert")
+ (revert-menu-item "ย้อนกลับ (&R)")
 
- (save-info "Save this file to disk")
- (save-menu-item "&Save")
+ (save-info "บันทึกไฟล์นี้ไปที่ดิสก์")
+ (save-menu-item "บันทึก (&S)")
 
  (save-as-info "Prompt for a filename and save this file to disk")
- (save-as-menu-item "Save &As…")
+ (save-as-menu-item "บันทึกเป็น… (&A)")
 
- (print-info "Send this file to a printer")
- (print-menu-item "&Print…")
+ (print-info "ส่งไฟล์นี้ไปยังเครื่องพิมพ์")
+ (print-menu-item "พิมพ์… (&P)")
 
  (page-setup-info "Configure printing parameters")
- (page-setup-menu-item "Page Setup…")
+ (page-setup-menu-item "ตั้งค่าหน้ากระดาษ…")
 
- (close-info "Close this file")
- (close-menu-item "&Close")
- (close-window-menu-item "&Close Window")
+ (close-info "ปิดไฟล์นี้")
+ (close-menu-item "ปิด (&C)")
+ (close-window-menu-item "ปิดหน้าต่าง (&C)")
 
- (quit-info "Close all windows")
+ (quit-info "ปิดทุกหน้าต่าง")
  (quit-menu-item-windows "E&xit")
  (quit-menu-item-others "&Quit")
 
- (edit-menu-label "&Edit")
+ (edit-menu-label "แก้ไข (&E)")
 
- (undo-info "Undo the most recent action")
- (undo-menu-item "&Undo")
+ (undo-info "เลิกทำการกระทำล่าสุด")
+ (undo-menu-item "เลิกทำ (&U)")
 
- (redo-info "Undo the most recent undo")
- (redo-menu-item "&Redo")
+ (redo-info "ทำซ้ำการเลิกทำล่าสุด")
+ (redo-menu-item "ทำซ้ำ (&R)")
 
  (cut-info "Move the selected items to the clipboard for later pasting")
- (cut-menu-item "Cu&t")
+ (cut-menu-item "ตัด (&t)")
 
  (copy-info "Copy the selected items to the clipboard for later pasting")
- (copy-menu-item "&Copy")
+ (copy-menu-item "คัดลอก (&C)")
 
  (paste-info "Paste the most recently copied or cut items, in place of the selected items")
- (paste-menu-item "&Paste")
+ (paste-menu-item "วาง (&P)")
  (paste-and-indent-menu-item "Paste and Indent")
 
  (clear-info "Erase the selected items without affecting the clipboard or pasting")
- (clear-menu-item-windows "&Delete")
+ (clear-menu-item-windows "ลบ (&D)")
 
  (select-all-info "Select the entire document")
- (select-all-menu-item "Select A&ll")
+ (select-all-menu-item "เลือกทั้งหมด (&l)")
 
-  (find-menu-item "Find") ;; menu item
+  (find-menu-item "ค้นหา") ;; menu item
   (find-from-selection-menu-item "Find From S&election")
   (find-info "Toggles the keyboard focus between the window being searched and the search bar")
 
  (find-next-info "Skip to the next occurrence of the string in the find window")
- (find-next-menu-item "Find Next")
+ (find-next-menu-item "ค้นหาถัดไป")
 
  (find-previous-info "Skip to the previous occurrence of the string in the find window")
- (find-previous-menu-item "Find Previous")
+ (find-previous-menu-item "ค้นหาก่อนหน้า")
 
-  (show-replace-menu-item "Show Replace")
-  (hide-replace-menu-item "Hide Replace")
+  (show-replace-menu-item "แสดงการแทนที่")
+  (hide-replace-menu-item "ซ่อนการแทนที่")
   (show/hide-replace-info "Toggles the visibility of the replace panel")
 
-  (replace-menu-item "Replace")
+  (replace-menu-item "แทนที่")
   (replace-info "Replace the search hit in the dark circle")
 
   (replace-all-info "Replace all occurrences of the search string")
-  (replace-all-menu-item "Replace All")
+  (replace-all-menu-item "แทนที่ทั้งหมด")
 
   (find-case-sensitive-info "Toggles between case-sensitive and case-insensitive search")
   (find-case-sensitive-menu-item "Find Case Sensitive")
@@ -770,7 +770,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
   (complete-word "Complete Word") ; the complete word menu item in the edit menu
   (no-completions "… no completions available") ; shows up in the completions menu when there are no completions (in italics)
 
-  (overwrite-mode "Overwrite Mode")
+  (overwrite-mode "โหมดเขียนทับ")
   (enable-overwrite-mode-keybindings "Enable overwrite mode keybindings")
 
   (enable-automatic-parens "Enable automatic parentheses") ; should "and square brackets and quotes" appear here?
@@ -782,11 +782,11 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (keybindings-menu-item "Keybindings")
  (keybindings-show-active "Show Active Keybindings")
  (keybindings-frame-title "Keybindings")
- (keybindings-sort-by-name "Sort by Name")
+ (keybindings-sort-by-name "เรียงโดยชื่อ")
  (keybindings-sort-by-key "Sort by Key")
  (keybindings-add-user-defined-keybindings "Add User-defined Keybindings…")
  (keybindings-add-user-defined-keybindings/planet "Add User-defined Keybindings from PLaneT…")
- (keybindings-menu-remove "Remove ~a")
+ (keybindings-menu-remove "ลบ ~a")
  (keybindings-choose-user-defined-file "Please choose a file containing keybindings.")
  (keybindings-planet-malformed-spec "The PLaneT spec is malformed: ~a") ; the string will be what the user typed in
  (keybindings-type-planet-spec "Please enter a PLaneT require spec (without the `require')")
@@ -802,18 +802,18 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
   " framework/keybinding-lang language. Instead, found the language ~s.")
 
  ;; menu items in the "special" menu
- (insert-text-box-item "Insert Text Box")
- (insert-image-item "Insert Image…")
- (insert-comment-box-menu-item-label "Insert Comment Box")
- (insert-lambda "Insert λ")
+ (insert-text-box-item "เพิ่มกล่องข้อความ")
+ (insert-image-item "เพิ่มรูปภาพ…")
+ (insert-comment-box-menu-item-label "เพิ่มกล่องคอมเมนต์")
+ (insert-lambda "เพิ่ม λ")
 
  (wrap-text-item "Wrap Text")
 
   ;; windows menu
- (windows-menu-label "&Windows")
- (tabs-menu-label "&Tabs") ;; this is the name of the menu under linux & windows
- (minimize "Minimize") ;; minimize and zoom are only used under mac os x
- (zoom "Zoom")
+ (windows-menu-label "หน้าต่าง (&W)")
+ (tabs-menu-label "แท็บ (&T)") ;; this is the name of the menu under linux & windows
+ (minimize "ซ่อน") ;; minimize and zoom are only used under mac os x
+ (zoom "ขยาย")
  (bring-frame-to-front "Bring Frame to Front")       ;;; title of dialog
  (bring-frame-to-front... "Bring Frame to Front…") ;;; corresponding title of menu item
  (most-recent-window "Most Recent Window")
@@ -834,13 +834,13 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
 
   (help-menu-label "&Help")
  (about-info "Credits and details for this application")
- (about-menu-item "About…")
+ (about-menu-item "เกี่ยวกับ…")
 
  ;; open here's new menu item
  (create-new-window-or-clear-current
   "Would you like to create a new window, or clear out the current one?")
  (clear-current "Clear Current")
- (new-window "New Window")
+ (new-window "หน้าต่างใหม่")
 
   ;; popup menu when right-clicking in the gap between
   ;; the definitions and interactions window
@@ -858,8 +858,8 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
   ; on the button whose semantics is "dismiss this dialog".
   ; they are there to provide more flexibility for translations
   ; in English, they are just cancel.
- (dont-exit "Cancel")
- (dont-quit "Cancel")
+ (dont-exit "ยกเลิก")
+ (dont-quit "ยกเลิก")
 
  ;;; autosaving
  (error-autosaving "Error autosaving “~a”.") ;; ~a will be a filename
@@ -917,7 +917,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  ; check box in the dialog and also used in the preferences dialog
  (save-after-switching-tabs "Save files whenever switching tabs or windows")
 
- (drscheme-internal-error "DrRacket Internal Error")
+ (drscheme-internal-error "ความผิดพลาดภายในของ DrRacket")
 
  ;;; tools
  (invalid-tool-spec "The tool specification in collection ~a's info.rkt file is invalid. Expected either a string or a non-empty list of strings, got: ~e")
@@ -935,8 +935,8 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (tool-error-phase2 "Error in phase 2 for tool ~s; ~s")
  ;; tool preferences panel
  (tool-config-changes "Changes to tool configuration will take effect the next time you start DrRacket.")
- (installed-tools "Installed tools")
- (tool-prefs-panel-tool:-label "Tool: ")
+ (installed-tools "เครื่องมือที่ติดตั้งแล้ว")
+ (tool-prefs-panel-tool:-label "เครื่องมือ: ")
  (load-tool-when-drracket-starts? "Load the tool when DrRacket starts?")
  (unnamed-tool "unnamed tool ~a")
  (note-that-tool-loaded " (loaded)")
@@ -945,25 +945,25 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
 
  ;;; define popup menu
  (end-of-buffer-define "<< end of buffer >>")
- (sort-by-name "Sort by name")
- (sort-by-position "Sort by position in file")
+ (sort-by-name "เรียงโดยชื่อ")
+ (sort-by-position "เรียงโดยตำแหน่งในไฟล์")
  (no-definitions-found "<< no definitions found >>")
  (jump-to-defn "Jump to definition of ~a")
  (define-menu-configure "Configure") ;; label of a submenu that configures the (define ...) popup menu
 
- (recent-items-sort-by-age "Sort by Age")
- (recent-items-sort-by-name "Sort by Name")
+ (recent-items-sort-by-age "เรียงโดยอายุ")
+ (recent-items-sort-by-name "เรียงโดยชื่อ")
 
  ;;; view menu
- (hide-definitions-menu-item-label "Hide &Definitions")
- (show-definitions-menu-item-label "Show &Definitions")
- (definitions-menu-item-help-string "Show/Hide the definitions window")
+ (hide-definitions-menu-item-label "ซ่อนหน้าต่างนิยาม (&D)")
+ (show-definitions-menu-item-label "แสดงหน้าต่างนิยาม (&D)")
+ (definitions-menu-item-help-string "แสดง/ซ่อนหน้าต่างนิยาม")
  (show-interactions-menu-item-label "Show &Interactions")
  (hide-interactions-menu-item-label "Hide &Interactions")
  (use-horizontal-layout "Use Horizontal Layout")
  (use-vertical-layout "Use Vertical Layout")
  (interactions-menu-item-help-string "Show/Hide the interactions window")
- (toolbar "Toolbar")
+ (toolbar "แถบเครื่องมือ")
  (toolbar-on-top "Toolbar On Top")
  (toolbar-on-top-no-label "Toolbar On Top With Small Buttons")
  (toolbar-on-left "Toolbar On Left")
@@ -974,16 +974,16 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (save-definitions-as "Save Definitions &As…")
  (save-definitions "Save Definitions")
  (print-definitions "Print Definitions…")
- (about-drscheme "About DrRacket")
+ (about-drscheme "เกี่ยวกับ DrRacket")
  (save-other "Save Other")
  (save-definitions-as-text "Save Definitions As Text…")
  (save-interactions "Save Interactions")
  (save-interactions-as "Save Interactions As…")
  (save-interactions-as-text "Save Interactions As Text…")
  (print-interactions "Print Interactions…")
- (new-tab "New Tab")
- (close-tab "Close Tab") ;; must not have any &s in it.
- (close-tab-amp "&Close Tab") ;; like close-tab, but with an ampersand on the same letter as the one in close-menu-item
+ (new-tab "แท็บใหม่")
+ (close-tab "ปิดแท็บ") ;; must not have any &s in it.
+ (close-tab-amp "ปิดแท็บ (&C)") ;; like close-tab, but with an ampersand on the same letter as the one in close-menu-item
 
  ;;; edit menu
  (split-menu-item-label "&Split")
@@ -991,7 +991,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (find-longest-line "Find Longest Line")
 
  ;;; language menu
- (language-menu-name "&Language")
+ (language-menu-name "ภาษา (&L)")
 
  ;;; scheme-menu
  (scheme-menu-name "Ra&cket")
@@ -1001,16 +1001,16 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (ask-quit-menu-item-help-string "Uses break-thread to stop the primary thread of the current evaluation")
  (force-quit-menu-item-label "Force the Program to Quit")
  (force-quit-menu-item-help-string "Uses custodian-shutdown-all to abort the current evaluation")
- (limit-memory-menu-item-label "Limit Memory…")
+ (limit-memory-menu-item-label "จำกัดหน่วยความจำ…")
  (limit-memory-msg-1 "The limit will take effect the next time the program")
  (limit-memory-msg-2 "is Run, and it must be at least eight megabytes.")
- (limit-memory-unlimited "Unlimited")
+ (limit-memory-unlimited "ไม่จำกัด")
  (limit-memory-limited "Limited")
- (limit-memory-megabytes "Megabytes")
+ (limit-memory-megabytes "เมกะไบต์")
  ; the next two constants are used together in the limit memory dialog; they are inserted
  ; one after another. The first one is shown in a bold font and the second is not.
  ; (the first can be the empty string)
- (limit-memory-warning-prefix "Warning: ")
+ (limit-memory-warning-prefix "คำเตือน: ")
  (limit-memory-warning
   "the unlimited memory setting is unsafe. With this setting,"
   " DrRacket cannot protect itself against programs that allocate too much, and DrRacket may crash.")
@@ -1056,18 +1056,18 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (distribution "Distribution")
  (distribution-explanatory-label "Distribution (to install on other machines)")
  (embed-dlls? "Embed DLLs in the executable?") ;; appears in the GUI only under windows
- (executable-type "Type")
+ (executable-type "ประเภท")
  (executable-base "Base")
- (filename "Filename: ")
- (create "Create")
+ (filename "ชื่อไฟล์: ")
+ (create "สร้าง")
  (files-for-icons-etc "Files for icons, etc.")
- (please-specify-a-filename "Please specify a filename to create.")
+ (please-specify-a-filename "กรุณาระบุชื่อไฟล์ที่จะสร้าง")
  (~a-must-end-with-~a
   "The ~a filename\n\n  ~a\n\nis illegal. The filename must end with “.~a”.")
  (macosx-executables-must-end-with-app
   "The filename\n\n  ~a\n\nis illegal. Under Mac OS, an executable must be a directory whose name ends with .app.")
  (warning-directory-will-be-replaced
-  "WARNING: the directory:\n\n  ~a\n\nwill be replaced. Proceed?")
+  "คำเตือน: ไดเรกทอรี :\n\n  ~a\n\nจะถูกแทนที่ ดำเนินการต่อไปหรือไม่?")
 
  (distribution-progress-window-title "Distribution Progress")
  (creating-executable-progress-status "Creating executable for distribution…")
@@ -1082,8 +1082,8 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
 
  ;;; buttons
  (execute-button-label "Run")
- (save-button-label "Save")
- (break-button-label "Stop")
+ (save-button-label "บันทึก")
+ (break-button-label "หยุด")
  (break-button-kill-label "Kill")
 
  ;;; search help desk popup menu
@@ -1095,14 +1095,14 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
  (expand-sexp "Expand S-expression")
 
  ;;; fraction dialog
- (enter-fraction "Enter Fraction")
+ (enter-fraction "ใส่เศษส่วน")
  (whole-part "Whole Part")
  (numerator "Numerator")
  (denominator "Denominator")
  (insert-number/bad-whole-part "The whole part of the number must be an integral number")
  (insert-number/bad-numerator "The numerator part of the number must be a non-negative, integral number")
  (insert-number/bad-denominator "The denominator part of the number must be a positive, integral number")
- (insert-fraction-menu-item-label "Insert Fraction…")
+ (insert-fraction-menu-item-label "แทรกเศษส่วน…")
 
  ;; number snip popup menu
  (show-decimal-expansion "View decimal expansion")
@@ -1131,7 +1131,7 @@ Copyright on translation: Sorawee Porncharoenwase <sorawee.pwase@gmail.com>, 201
   (teachpack-conflict
    "WARNING: the already installed teachpack ~a conflicts with ~a (the export ~a is in both)")
    ;; a button label; the two ~a are filled with teachpack names
-  (remove-and-add-teachpack "Remove ~a and add ~a")
+  (remove-and-add-teachpack "นำ ~a ออกและเพิ่ม ~a")
   (teachpack-already-installed "A teachpack with the name '~a' has already been installed. Overwrite it?")
   ; ~a is filled with a list of language names. Each name is separated by a newline and is indented two spaces (no commas, no 'and')
   (teachpacks-only-in-languages "The Teachpack menu is only available in these languages: ~a\n\nIn other languages, use 'require' instead.")

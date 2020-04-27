@@ -91,7 +91,7 @@
   " Sie etwas sehen, dass keinen Sinn ergibt, sind aber nicht sicher, ob es ein"
   " Fehler ist oder nicht, fragen Sie auf der Mailing-Liste.")
  (visit-github "GitHub besuchen")
- (visit-mailing-list "Mailing-Listen besuchen")
+ (visit-mailing-lists "Mailing-Listen besuchen")
  
  ;;; check syntax
  (check-syntax "Syntaxprüfung")
@@ -124,7 +124,7 @@
  (cs-status-eval-compile-time "Syntaxprüfung: Compile-Time-Code ausführen")
  (cs-status-expanding-expression "Syntaxprüfung: Ausdruck expandieren")
  (cs-status-loading-docs-index "Syntaxprüfung: Dokumentations-Index laden")
- (cs-syncheck-running "Syntaprüfung läuft")
+ (cs-syncheck-running "Syntaxprüfung läuft")
  (cs-mouse-over-import "Bindung „~s“ importiert aus „~s“")
  (cs-mouse-over-import/library-only "importiert aus „~s“")
  
@@ -143,14 +143,14 @@
  (cs-one-varref "Ein gebundenes Vorkommen")
  (cs-n-varrefs "~a gebundene Vorkommen") ;; expected to have one ~a formatter that will accept a number
 
- (cs-contract-my-obligation "Vertrag: Obliation dieses Moduls")
+ (cs-contract-my-obligation "Vertrag: Obligation dieses Moduls")
  (cs-contract-their-obligation "Vertrag: Obligation des Klientenmoduls")
  (cs-contract-both-obligation "Vertrag: Obligation sowohl dieses Moduls als auch des Klientenmoduls")
- (cs-contract-unk-obligation "Vertrag: Oblikation unbekannt")
+ (cs-contract-unk-obligation "Vertrag: Obligation unbekannt")
 
  ;; require prefix functionality
  (cs-add-prefix-for-require "Präfix für require hinzufügen")
- (cs-prefix-require-title "Präfix für Require")
+ (cs-prefix-require-title "Präfix für require")
  (cs-prefix-require "Präfix wählen für alle importierten Variablen")
  (cs-all-binders-are-prefixed "Alle require-Formen scheinen schon einen Präfix zu haben; stattdessen umbenennen")
  (cs-the-binder-is-prefixed "Die require-Form scheint schon einen Präfix zu haben; stattdessen umbenennen")
@@ -169,7 +169,7 @@
  (online-expansion-running "Hintergrund-Expansion läuft")
  (online-expansion-only-raw-text-files-supported "Nur reine Text-Dateien sind unterstützt")
  (online-expansion-abnormal-termination "Hintergrund-Expansion unglücklich abgebrochen")
- (online-expansion-abnormal-termination-out-of-memory "Hintergrund-Expansion unglücklich abgebrochend (kein Speicher mehr)")
+ (online-expansion-abnormal-termination-out-of-memory "Hintergrund-Expansion unglücklich abgebrochen (kein Speicher mehr)")
  (online-expansion-finished-successfully "Hintergrund-Expansion erfolgreich abgeschlossen")
 
  (jump-to-error "Zum Fehler springen")
@@ -193,7 +193,7 @@
  (online-expansion-error-margin "am Rand")
  ; the label of a preference in the (string-constant online-expansion) section
  (show-arrows-on-mouseover "Bindungen und Tail-Positionen unter Mauszeiger anzeigen")
- (show-blueboxes "Blaue Kästen  und blaue anzeigen")
+ (show-blueboxes "Signatur-Kasten und -Pfeil oben rechts anzeigen")
  ;;; info bar at botttom of drscheme frame
  (collect-button-label "GC")
  (read-only "Nur Lesen")
@@ -319,7 +319,7 @@
  (plt:hd:refreshing-manuals-finished "Fertig.")
  (plt:hd:about-help-desk "Über das Hilfezentrum")
  (plt:hd:help-desk-about-string
-  "Das Hilfezentrum ist die primäre Quelle für Information über die PLT-Software,insbesondere DrRacket, MzScheme und MrEd.\n\nVersion ~a\nCopyright (c) ~a-~a PLT")
+  "Das Hilfezentrum ist die primäre Quelle für Information über die PLT-Software, insbesondere DrRacket, MzScheme und MrEd.\n\nVersion ~a\nCopyright (c) ~a-~a PLT")
  (plt:hd:help-on-help "Hilfe zur Hilfe")
  (plt:hd:help-on-help-details "Hilfe zum Hilfezentrum befindet sich auf der Homepage des Hilfezentrums unter `Help Desk'.   (Die Homepage des Hilfezentrums ist über den `Home'-Knopf zu erreichen.)")
   (reload "Aktualisieren") ;; refresh the page in a web browser
@@ -337,12 +337,30 @@
   (use-drscheme-font-size "DrRacket-Schriftgröße verwenden")
 
   (help-desk-this-is-just-example-text
-   "Dies ist nur ein Beispieltext für das Setzen der Schriftgröße.  Öffnen sie das Hilfezentrum (im „Hilfe“-Menü), um diesen Links zu folgen.")
+   "Dies ist nur ein Beispieltext für das Setzen der Schriftgröße.  Öffnen Sie das Hilfezentrum (im „Hilfe“-Menü), um diesen Links zu folgen.")
 
   ;; this appears in the bottom part of the frame the first time the user hits `f1' 
   ;; (assuming nothing else has loaded the documentation index first)
   ;; see also: cs-status-loading-docs-index
   (help-desk-loading-documentation-index "Hilfezentrum: Dokumentations-Index wird geladen")
+
+    ;; the next four are all in the same dialog box (only one of the first two appears)
+  (help-desk-materialize-docs-something-changed
+   "DrRacket hat ein mögliches Problem mit dem Index der Dokumentation"
+   " festgestellt. Soll eine Reparatur versucht werden? (Das kann ein"
+   " bisschen dauern.)?\n\nGenauer gesagt: Das Dokumentations-Verzeichnis ~a"
+   " existiert nicht, und deshalb könnte die Suche im Browser fehlschlagen.")
+  (help-desk-materialize-docs-first-time
+   "DrRacket hat ein mögliches Problem mit dem Index der Dokumentation"
+   " festgestellt. Soll eine Reparatur versucht werden? (Das kann ein"
+   " bisschen dauern.)?\n\nGenauer gesagt: DrRacket"
+   " hat die Dokumentation bisher noch nicht materialisiert, und deshalb"
+   " könnte die Suche im Browser fehlschlagen.")
+  (help-desk-do-nothing "Nichts tun")
+  (help-desk-materialize-user-docs "Dokumentation materialisieren")
+  ; this is used in a dialog to let the user know that work is being done based on
+  ; choices made from the previous dialog in the above four string constants
+  (help-desk-materializing-user-docs... "Dokumentation wird materialisiert…")
 
  ;; Help desk htty proxy
  (http-proxy "HTTP-Proxy")
@@ -364,7 +382,7 @@
  (browser-cmdline-expl-line-1 "(Kommandozeile konstruiert durch Aneinanderhängen von Vor-Text, URL,")
  (browser-cmdline-expl-line-2 " und Nach-Text, ohne zusätzliche Leerzeichen dazwischen.")
  (install? "Installieren?")  ;; if a .plt file is found (title of dialog)
- (you-have-selected-an-installable-package "Sie haben eine installierbares Paket angewählt.")
+ (you-have-selected-an-installable-package "Sie haben ein installierbares Paket angewählt.")
  (do-you-want-to-install-it? "Wollen Sie es installieren?")
  (paren-file-size "(Die Datei hat ~a Bytes)")
  (download-and-install "Herunterladen && installieren") ;; button label
@@ -515,7 +533,7 @@
  (set-font "Schriftart setzen…")
  (font-smoothing-label  "Weiche Kanten bei Schrift")
  (font-smoothing-none "Nicht")
- (font-smoothing-some "Bißchen")
+ (font-smoothing-some "Bisschen")
  (font-smoothing-all "Total")
  (font-smoothing-default "System-Einstellung verwenden")
  (font-weight-label "Schriftstärke")
@@ -700,17 +718,17 @@
  (redo-info "Letzte Rückgängig-Operation rückgängig machen")
  (redo-menu-item "&Nochmal")
 
- (cut-info "Verschiebe die Selektion ins Clipboard, um sie später wieder einfügen zu können")
+ (cut-info "Selektion ins Clipboard verschieben, um sie später wieder einfügen zu können")
  (cut-menu-item "&Ausschneiden")
 
- (copy-info "Kopiere die Selektion ins Clipboard, um sie später wieder einfügen zu könne")
+ (copy-info "Selektion ins Clipboard kopieren, um sie später wieder einfügen zu können")
  (copy-menu-item "&Kopieren")
 
- (paste-info "Ersetze die aktuelle Selektion durch die zuletzt kopierte oder ausgeschnittene Selektion")
+ (paste-info "Aktuelle Selektion ersetzen durch die zuletzt kopierte oder ausgeschnittene Selektion")
  (paste-menu-item "&Einfügen")
  (paste-and-indent-menu-item "Einfügen und Einrücken")
 
- (clear-info "Lösche die Selektion, ohne das Clipboard dabei zu ändern oder etwas einzufügen")
+ (clear-info "Selektion löschen, ohne das Clipboard dabei zu ändern oder etwas einzufügen")
  (clear-menu-item-windows "&Löschen")
 
  (select-all-info "Gesamtes Dokument selektieren")
@@ -868,20 +886,23 @@
  (overwrite-file-button-label "Überschreiben")
  
  (definitions-modified 
-   "Die Definitionen wurden auf der Platte geändert; bitte speichern sie die Definitionen oder holen Sie diese von der Platte zurück.")
+   "Die Definitionen wurden auf der Platte geändert; bitte speichern Sie die Definitionen oder holen Sie diese von der Platte zurück.")
  
  ;; for a dialog that appears when Run is clicked and there are unsaved files
  ; the ~a is filled with a filename (same string that appears in a tab)
  (one-file-not-saved-do-the-save?
-  "Die Datei “~a” ist nicht gespeechert; vor Start speichern??")
+  "Die Datei “~a” ist nicht gespeichert; vor Start speichern?")
  ; the string is suffixed with a list of filenames (which are separated by newlines)
  (many-files-not-saved-do-the-save?
-  "Manche andere Dateien Dateien sind nicht gespeichert; vor Start speichern?\n\nDateien:")
+  "Manche andere Dateien sind nicht gespeichert; vor Start speichern?\n\nDateien:")
  ; button label to go ahead with saving
  (save-all-files "Alle Dateien speichern")
  ; check box in the dialog and also used in the preferences dialog
- (save-after-switching-tabs "Dateien speichern immeer bei Tab- oder Fenster-Wechsel")
- 
+ (save-after-switching-tabs "Dateien beim Tab- oder Fenster-Wechsel speichern")
+
+ (dont-ask-about-saving-after-switching-tabs
+  "Nicht fragen und nicht speichern, wenn Start gedrückt wurde bei nicht gespeicherten Tabs oder Fenstern")
+
  (drscheme-internal-error "Interner Fehler in DrRacket")
  
  ;;; tools
@@ -902,7 +923,10 @@
  (tool-config-changes "Änderungen an der Tool-Konfiguration werden erst beim nächsten Start von DrRacket aktiv.")
  (installed-tools "Installierte Tools")
  (tool-prefs-panel-tool:-label "Tool: ")
+ (tool-prefs-panel-title "Tools")
  (load-tool-when-drracket-starts? "Tool laden wenn DrRacket startet?")
+ (load-tool-load "Tool laden")
+ (load-tool-skip "Tool überspringen")
  (unnamed-tool "Tool ohne Namen ~a")
  (note-that-tool-loaded " (geladen)")
  (note-that-tool-was-skipped " (übersprungen)")
@@ -1024,12 +1048,12 @@
  (executable-base "Hauptteil")
  (filename "Dateiname: ")
  (create "Erzeugen")
- (files-for-icons-etc "Dateien für für Bildchen etc.")
+ (files-for-icons-etc "Dateien für Bildchen etc.")
  (please-specify-a-filename "Bitte einen Dateinamen angeben.")
  (~a-must-end-with-~a
   "Der Dateiname auf „.~a“\n\n  ~a\n\nist nicht zulässig. Der Dateiname muss auf „.~a“ enden.")
  (macosx-executables-must-end-with-app
-  "Der Dateiname auf „.~a“\n\n  ~a\n\nist nicht zulässig. Unter Mac OS muss der Dateiname auf „.app“ enden.")
+  "Der Dateiname auf „.~a“\n\n  ~a\n\nist nicht zulässig. Unter macOS muss der Dateiname auf „.app“ enden.")
  (warning-directory-will-be-replaced
   "WARNUNG: Das Verzeichnis:\n\n  ~a\n\nsoll überschrieben werden. Weitermachen?")
  
@@ -1187,6 +1211,9 @@
  (module-language-one-line-summary "Die #lang-Zeile spezifiziert die tatsächliche Sprache.")
   
  (module-language-auto-text "Automatisch Zeile mit #lang") ;; shows up in the details section of the module language
+ (module-language-auto-text-most-recent "Zuletzt benutzte #lang-Zeile")
+  ; to the right of this string is a text entry field whose content is the #lang line that'll be used.
+ (module-language-auto-text-always-same "Immer die gleiche #lang-Zeile benutzen:")
  ;; the next four string constants show up in the REPL in DrRacket in the "Racket Language",
  ;; which is also the "Determine language from source" language. They are put right after the name
  ;; of the language from the "#lang" line at the beginning of the source file
@@ -1321,6 +1348,7 @@
   (last-stack-frame "letzten Stack-Frame anzeigen")
   (last-stack-frames "die letzten ~a Stack-Frames anzeigen")
   (next-stack-frames "die nächsten ~a Stack-Frames anzeigen")
+  (more-stack-frames "mehr Stack-Frames zeigen")
  
  ;;; welcoming message in repl
  (language "Sprache")
@@ -1386,7 +1414,7 @@
  (module-browser-name-medium "Mittel")
  (module-browser-name-long "Lang")
  (module-browser-name-very-long "Lang mit Phasen")  ;; like 'Long' but shows the phases where this file is loaded
- (module-browser-open-all "Alle hier angezeigten Datein öffnen")
+ (module-browser-open-all "Alle hier angezeigten Dateien öffnen")
 
  (happy-birthday-matthias "Happy Birthday, Matthias!")
  (happy-birthday-matthew "Happy Birthday, Matthew!")
@@ -1465,7 +1493,6 @@
  (stepper-no-later-step "Keine weiteren Schritte.")
   
  (stepper-no-selected-step "Keine Schritte im markierten Bereich. Vielleicht ist es auskommentiert?")
-  
  (stepper-no-last-step "Der letzte Schritt ist noch nicht verfügbar.")
 
  (debug-tool-button-name "Debugger")
@@ -1550,7 +1577,7 @@
   (profj-language-config-support-test-language "Spracherweiterung „test“ unterstützen?")
   (profj-language-config-testing-check "Check-Ausdruck zulassen?") ; check should not be translated
   (profj-language-config-classpath "Klassenpfad")
-  (profj-language-config-choose-classpath-directory "Verzeichnis für den Klassenpfad auswählren")
+  (profj-language-config-choose-classpath-directory "Verzeichnis für den Klassenpfad auswählen")
   (profj-language-config-classpath-display "Aktuellen Wert anzeigen") ; Button label to print the current classpath
 
   (profj-test-name-close-to-example "Der Name von Klasse ~a enhält etwas, das so ähnlich wie „Example“ aussieht.")
@@ -1713,7 +1740,7 @@
 
   ;; GUI Tool
   (gui-tool-heading "GUI-Werkzeug")
-  (gui-tool-before-clicking-message "Befor Sie auf ein Tool-Icon klicken, benutzen Sie „GUI einfügen“ vom „Spezial“-Menü, um ein Wurzel-GUI-Element einzufügen, oder selektieren Sie eine schon vorher eingefügte GUI.")
+  (gui-tool-before-clicking-message "Bevor Sie auf ein Tool-Icon klicken, benutzen Sie „GUI einfügen“ vom „Spezial“-Menü, um ein Wurzel-GUI-Element einzufügen, oder selektieren Sie eine schon vorher eingefügte GUI.")
   (gui-tool-show-gui-toolbar "GUI-Toolbar einblenden")
   (gui-tool-hide-gui-toolbar "GUI-Toolbar ausblenden")
   (gui-tool-insert-gui "GUI einfügen")
@@ -1795,6 +1822,8 @@
   (install-pkg-use "Benutzen") ; as opposed to "Infer", label for text box
   (install-pkg-type-label "Typ Paket-Quelle")
   (install-pkg-file "Datei")
+  (install-pkg-link "Link")
+  (install-pkg-static-link "Statischer link")
   (install-pkg-dir "Verzeichnis")
   (install-pkg-dir-url "Verzeichnis woanders")
   (install-pkg-file-url "Datei woanders")
@@ -1822,6 +1851,7 @@
   (install-pkg-default "Standard")
   (install-pkg-scope-label "Paket-Einzugsbereich")
   (install-pkg-default-scope-label "Standard-Paket-Einzugsbereich") ; for picking the scope to be default
+  (install-pkg-default-scope-changed "Standard-Paket-Einzugsbereich erfolgeich auf ~a geändert") ; confirming message after change
   (install-pkg-installation "Bestimmte Racket-Installation")
   (install-pkg-user "Bestimmter Benutzer und Racket-Version")
   (install-pkg-set-as-default "Als Standard setzen")
@@ -1831,6 +1861,17 @@
   (install-pkg-update-package-list "Paket-Liste aktualisieren")
   (install-pkg-stop-update "Aktualisierung anhalten")
   (install-pkg-filter "Filter")
+  (install-pkg-match "~a/~a passen")
+  (install-pkg-package "Paket")
+  (install-pkg-author "Autor")
+  (install-pkg-description "Beschreibung")
+  (install-pkg-tags "Tags")
+  (install-pkg-checksum "Prüfsumme")
+  (install-pkg-source "Quelle")
+  (install-pkg-catalog "Katalog")
+  (install-pkg-scope "Einzugsbereich")
+  (install-pkg-name "Name")
+
   (install-pkg-update-catalogs? "Datenbank aktualisieren um mit dem konfigurierten Satz Kataloge übereinzustimmen?")
   (install-pkg-currently-configured-are "Die aktuell konfigurierten Kataloge sind")
   (install-pkg-database-recorded-are "Die Kataloge in der Datenbank sind")
@@ -1846,23 +1887,38 @@
   (install-pkg-abort-promote "Beförderung abbrechen")
   (install-pkg-abort-migrate "Migration abbrechen")
   (install-pkg-abort-setup "Konfiguration abbrechen")
-  (install-pkg-abort-setup "Abort Setup")
+  (install-pkg-abort-setup "Setup abbrechen")
   (install-pkg-abort-generic-action "Aktion abbrechen")
   (install-pkg-close-terminal-output "Anzeige schließen")
   (install-pkg-show-all-options "Alle Optionen anzeigen")
   (install-pkg-migrate-available-installations "Verfügbare Installationen")
+    ;; all ~a will be substituted with the different single characters
+  ;; conveying the state, by default these are ✓*!=@
+  (install-pkg-legend "~a: installiert ~a: auto-installiert ~a: nicht Standard-Einzugsbereich ~a: installiert als Link; ~a: installiert von URL")
   (pkg-manager-menu-item "Paket-Manager…")
+  (install-pkg-title "Paket-Manager")
   ;; where ~a gets an installation name:
   (install-pkg-packages-for "Pakete für ~a")
   (install-pkg-really-remove-installation "Sind Sie sicher, dass Sie alle installierten Pakete und Informationen für ~a löschen wollen?")
 
+  (install-pkg-installer "Paket-Installation")
+  (install-pkg-copy "Nachricht kopieren")
+  (install-pkg-installation "Installation")
+  (install-pkg-user "Benutzer")
+  (install-pkg-any "alles") ;; any file type
+  (install-pkg-bad "nicht unterstützt") ;; bad (not supported) file type
+  (install-pkg-catalogs "Paket-Katalog")
+  (install-pkg-updating "Paket-Liste wird aktualisiert…")
+  (install-pkg-updating-from "Aktualisierung von ~a…")
+  (install-pkg-details-from "Details für ~a werden von ~a geladen…")
+  
   (install-pkg-abort-set-scope "Änderung des Einzugsbereich widerrufen")
 
-  (install-pkg-dependencies-fail "Fehlschlag: Installation/Aktualisierung widerrufen, falls Abhänigkeiten fehlen")
+  (install-pkg-dependencies-fail "Fehlschlag: Installation/Aktualisierung widerrufen, falls Abhängigkeiten fehlen")
   (install-pkg-dependencies-force "Trotzdem: Installieren trotz fehlender Abhängigkeiten")
-  (install-pkg-dependencies-search-ask "Fragen: bei jeder fehlenden Abhänigkeit fragen (nicht unterstützt in GUI)")
-  (install-pkg-dependencies-search-auto "Auto: fehlende Abhänigkeiten automatisch installieren")
-  (install-pkg-dependencies-search-auto+update "Auto + Aktualisieren: Abhänigkeiten aktualisieren wann immer möglich")
+  (install-pkg-dependencies-search-ask "Fragen: bei jeder fehlenden Abhängigkeit fragen (nicht unterstützt in GUI)")
+  (install-pkg-dependencies-search-auto "Auto: fehlende Abhängigkeiten automatisch installieren")
+  (install-pkg-dependencies-search-auto+update "Auto + Aktualisieren: Abhängigkeiten aktualisieren wann immer möglich")
 
   (install-pkg-dependencies-mode "Modus Abhängigkeiten")
 
@@ -1875,7 +1931,7 @@
   (install-pkg-add-package-catalog "Paket-Katalog hinzufügen")
 
   (install-pkg-not-rentrant "Installation und Aktualisierung können nicht gleichzeitig laufen."
-                            " Brechen Sie entweder den laufenden Prozess ab oder warten, bis er fertig ist.")
+                            " Brechen Sie entweder den laufenden Prozess ab oder warten Sie, bis er fertig ist.")
 
   ;; open a file via a collection path (new "Open" menu item in DrRacket)
   (open-require-path "Require-Pfad öffnen…")
@@ -1888,13 +1944,13 @@
   ;  (bracketed by some newlines to separate it out)
   ; second ~a is filled with /etc/paths.d/racket (or some other path like it in the future)
   ; third ~a is filled with the path to the bin directory of the current drracket
-  (adding-racket/bin-to-path-failed 
-   "Versuch fehlgeschlagen, Racket-Unterstützung zur Kommandozeile hinzufügen.~aGenauer:"
+  (adding-racket/bin-to-path-failed
+   "Versuch fehlgeschlagen, Racket-Unterstützung zur Kommandozeile hinzuzufügen.~aGenauer:"
    " konnte „~a“ mit Inhalt „~a“ nicht erzeugen.")
   ; first and third ~a are filled with /etc/paths.d/racket (or some other path like it in the future)
   ; and the second one is filled with the path to the bin directory that was put into that file.
   (added-racket/bin-to-path
-   "Sie sollten nun Racket mit all seinen Programme von der"
+   "Sie sollten nun Racket mit all seinen Programmen von der"
    " Kommandozeile benutzen können.\n\nDer"
    " Standardpfad in PATH wurde für alle Benutzer konfiguriert, indem die Datei"
    " ~a hinzugefügt wurde und auf ~a zeigt. Sie können dies rückgängig machen, indem"
